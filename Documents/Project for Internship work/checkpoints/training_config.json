@@ -1,0 +1,8 @@
+{
+    "model": "<class 's3cmn.model.model.S3CMN'>",
+    "batch_size": 32,
+    "learning_rate": 5e-05,
+    "num_epochs": 5,
+    "output_dir": "checkpoints",
+    "save_steps": 1000
+}
