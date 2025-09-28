@@ -15,9 +15,29 @@ def solve_sudoku(board):
 
 def print_board(board):
     """
-    Print the Sudoku board in a formatted way
+    Print the Sudoku board in a readable format with visual separators.
+    This function displays the 9x9 Sudoku grid with horizontal and vertical lines
+    to separate the 3x3 boxes, making it easy to read.
     """
-    pass
+    # Loop through each row of the 9x9 Sudoku board
+    for i in range(9):
+        # Add horizontal separator line after every 3 rows (but not before the first row)
+        if i % 3 == 0 and i != 0:
+            print("- - - - - - - - - - - -")
+        
+        # Loop through each column in the current row
+        for j in range(9):
+            # Add vertical separator after every 3 columns (but not before the first column)
+            if j % 3 == 0 and j != 0:
+                print(" | ", end="")
+            
+            # Print the number at position (i,j)
+            if j == 8:
+                # If this is the last column in the row, print the number and move to next line
+                print(board[i][j])
+            else:
+                # If this is not the last column, print the number followed by a space
+                print(str(board[i][j]) + " ", end="")
 
 def load_puzzle(filename):
     """
