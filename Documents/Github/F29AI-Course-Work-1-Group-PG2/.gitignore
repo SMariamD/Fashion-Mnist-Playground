@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Operating System
+.DS_Store
+desktop.ini
+
+# Project specific
+*.pth
